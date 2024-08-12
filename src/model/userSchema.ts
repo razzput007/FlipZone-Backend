@@ -61,4 +61,4 @@ userSchema.virtual("age").get(function(){
   
 })
 
-export const user=mongoose.model<IUser>("user",userSchema);
+export const User=mongoose.model<IUser>("User",userSchema);
