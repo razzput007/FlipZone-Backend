@@ -6,9 +6,6 @@ const app = express();
 const port = 7000;
 connectionDB();
 app.use(express.json());
-app.get("/", (req, res) => {
-    res.send("Hola mundo");
-});
 app.use("/api/v1/user", userRoutes);
 app.use(errorMiddleware);
 app.listen(port, () => {
