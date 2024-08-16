@@ -9,6 +9,7 @@ connectionDB();
 app.use(express.json());
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/product", productRoutes);
+app.use('/uploads', express.static("uploads"));
 app.use(errorMiddleware);
 app.listen(port, () => {
     console.log(`Server is runnig on ${port}`);
