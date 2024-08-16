@@ -10,7 +10,7 @@ export const newUser=TryCatch(
             if(user){
                 return res.status(200).json({
                 success:true,
-                message:`Welcome,${user.name}`;
+                message:`Welcome,${user.name}`
                 })
             }
             if(!_id || !name || !email || !photo || !gender || !dob ){
